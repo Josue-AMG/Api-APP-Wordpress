@@ -87,7 +87,7 @@ class TapCaja extends StatelessWidget {
             ),
             const SizedBox(height: 20.0),
             Image.asset(
-              'Images/toolbox.png', 
+              'assets/Images/toolbox.png', 
               width: 500.0,
               height: 500.0,
             ),
@@ -193,13 +193,13 @@ class _Predecir_EdadState extends State<Predecir_Edad> {
         _age = data['age'];
         if (_age < 30) {
           _ageGroup = 'young';
-          _imagePath = 'Images/young.jpg';
+          _imagePath = 'assets/Images/young.jpg';
         } else if (_age < 60 && _age > 30) {
           _ageGroup = 'adult';
-          _imagePath = 'Images/adults.png';
+          _imagePath = 'assets/Images/adults.png';
         } else {
           _ageGroup = 'elderly';
-          _imagePath = 'Images/viejos.jpg';
+          _imagePath = 'assets/Images/viejos.jpg';
         }
       });
     } else {
@@ -515,7 +515,7 @@ class Acerca_de extends StatelessWidget {
             Text(" "),
             CircleAvatar(
               radius: 80,
-              backgroundImage: AssetImage('Images/yo.jpg'), // Reemplaza 'your_photo.jpg' con la ruta de tu foto
+              backgroundImage: AssetImage('assets/Images/yo.png'), // Reemplaza 'your_photo.jpg' con la ruta de tu foto
             ),
             SizedBox(height: 20),
             Text(
